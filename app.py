@@ -31,7 +31,7 @@ if not API_KEY:
 # 4. Gemini AI કન્ફિગરેશન
 try:
     genai.configure(api_key=API_KEY)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-3.8-flash")
 except Exception as e:
     st.error(f"Gemini Configuration Error: {e}")
     st.stop()
